@@ -2,3 +2,20 @@
 // Structure
 // Styles for Tabs, Messages, ..etc
 // --------------------------------------------------
+
+// --- --- HEADER --- ---
+.navbar .brand {
+  float: right;
+  padding: 3px 1px;
+}
+
+.page-header h1 {
+  color: $white;
+  font-size: $fontSizeLarge;
+  padding: 10px 0px;
+}
+
+.page-header {
+  margin: 0;
+  padding: 0;
+}

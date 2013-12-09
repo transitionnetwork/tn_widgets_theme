@@ -8783,6 +8783,22 @@ html.js input.throbbing {
     width: 85%;
   }
 }
+.navbar .brand {
+  float: right;
+  padding: 3px 1px;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 18.75px;
+  padding: 10px 0px;
+}
+
+.page-header {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 48px;
   font-weight: 900;

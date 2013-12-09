@@ -10,53 +10,6 @@
  * @see html.tpl.php
  */
 ?>
-<header id="header" class="header" role="header">
-  <div class="container">
-    <div id="navigation" class="navbar">
-      <div class="navbar-inner">
-        <div class="container clearfix">
-          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-          <a class="btn btn-navbar btn-navbar-menu" data-toggle="collapse" data-target=".nav-menu-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <!-- .btn-navbar-search for collapsed search form -->
-          <?php if ($search_form): ?>
-            <a class="btn btn-navbar btn-navbar-search" data-toggle="collapse" data-target=".nav-search-collapse">
-              <span class="icon-search"></span>
-            </a>
-          <?php endif; ?>
-
-          <?php if ($logo): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="pull-left brand">
-              <?php print $site_name; ?>
-            </a>
-          <?php endif; ?>
-
-          <div class="nav-collapse nav-menu-collapse">
-            <div class="inner">
-              <?php if ($main_menu): ?>
-                <nav id="main-menu" class="main-menu pull-left" role="navigation">
-                  <?php print render($main_menu); ?>
-                </nav> <!-- /#main-menu -->
-              <?php endif; ?>
-            </div>
-          </div>
-
-          <div class="nav-collapse nav-search-collapse">
-            <div class="inner">
-              <?php if ($search_form): ?>
-                <?php print $search_form; ?>
-              <?php endif; ?>
-            </div>
-          </div>
-
-      </div>
-    </div>
-  </div> <!-- /#navigation -->
-</header>
-
 <div id="main-wrapper">
   <div id="main" class="main <?php print (!$is_panel) ? 'container' : ''; ?>">
     <?php if ($messages): ?>
@@ -68,13 +21,20 @@
     <?php endif; ?>
     <div id="content">
       <a id="main-content"></a>
-      <div id="page-header">
+       <div id="page-header">
           <div class="container">
-            <?php if ($title): ?>
-              <div class="page-header">
-                <h1 class="title"><?php print $title; ?></h1>
+            <div class="page-header">
+              <div id="navigation" class="navbar">
+                <div class="navbar-inner">
+                  <?php if ($logo): ?>
+                    <img src="<?php print $logo; ?>" alt="logo" id="logo" class="brand"/>
+                  <?php endif; ?>
+                  <?php if ($title): ?>
+                    <h1 class="title"><?php print $title; ?></h1>
+                  <?php endif; ?>
+                </div>
               </div>
-            <?php endif; ?>
+            </div>
             <?php if ($tabs): ?>
               <div class="tabs">
                 <?php print render($tabs); ?>
