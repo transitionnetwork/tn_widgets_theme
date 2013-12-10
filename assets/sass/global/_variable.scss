@@ -37,7 +37,7 @@ $textColor:             $blueDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #1ABC9C !default;
+$linkColor:             #027583 !default;
 $linkColorHover:        lighten($linkColor, 5%) !default;
 
 
@@ -179,7 +179,7 @@ $wellBackground:                  $grayLighter !default;
 $navbarCollapseWidth:             979px !default;
 $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1 !default;
 
-$navbarHeight:                    50px !default;
+$navbarHeight:                    63px;
 $navbarBackgroundHighlight:       $textColor !default;
 $navbarBackground:                $textColor !default;
 $navbarBorder:                    darken($navbarBackground, 5%) !default;

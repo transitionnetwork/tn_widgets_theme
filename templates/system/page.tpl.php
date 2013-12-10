@@ -24,7 +24,7 @@
        <div id="page-header">
           <div class="container">
             <div class="page-header">
-              <div id="navigation" class="navbar">
+              <div id="navigation" class="navbar navbar-fixed-top">
                 <div class="navbar-inner">
                   <?php if ($logo): ?>
                     <img src="<?php print $logo; ?>" alt="logo" id="logo" class="brand"/>
