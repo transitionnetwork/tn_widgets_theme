@@ -1,3 +1,7 @@
 // Page
 // Styles for panels
 // --------------------------------------------------
+
+.panel-pane.hide-title .pane-title {
+  display: none;
+}

@@ -8822,6 +8822,10 @@ body #footer .container {
   box-shadow: 0 0 5px black;
 }
 
+.panel-pane.hide-title .pane-title {
+  display: none;
+}
+
 .view-tiles .views-row {
   margin: 0.382em 0 0.618em;
   background: #ecf0f1;
