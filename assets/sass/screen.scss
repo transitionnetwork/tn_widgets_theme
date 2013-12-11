@@ -17,6 +17,7 @@
 
 // Theme CSS
 // --------------------------------------------------
+@import "global/bootswatch";
 @import "partials/layout";
 @import "partials/structure";
 @import "partials/menu";
@@ -27,4 +28,3 @@
 @import "partials/comment";
 @import "partials/node";
 @import "partials/user";
-@import "global/bootswatch";

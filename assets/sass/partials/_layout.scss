@@ -2,3 +2,18 @@
 // Layout
 // Styles for main layout
 // --------------------------------------------------
+body {
+  padding-top: $navbarHeight + 12px;
+}
+
+@media (max-width: 979px) {
+
+  body {
+    padding-top: 0;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-bottom: 11px;
+  }
+
+}

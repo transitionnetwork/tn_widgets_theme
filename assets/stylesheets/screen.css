@@ -8783,60 +8783,6 @@ html.js input.throbbing {
     width: 85%;
   }
 }
-body {
-  padding-top: 75px;
-}
-
-.navbar .brand {
-  float: right;
-  padding: 3px 10px;
-}
-
-.page-header h1 {
-  color: white;
-  font-size: 18.75px;
-  padding: 10px;
-}
-
-.page-header {
-  margin: 0;
-  padding: 0;
-}
-
-body #footer {
-  margin-top: 0.618em;
-  font-size: 85%;
-}
-body #footer .container {
-  padding: 0.382em 0;
-  border-top: 1px solid #ddd;
-}
-
-.pane-content ul.nav-tabs {
-  margin-bottom: 0.618em;
-}
-
-#navigation.navbar-fixed-top {
-  -webkit-box-shadow: 0 0 5px black;
-  -moz-box-shadow: 0 0 5px black;
-  box-shadow: 0 0 5px black;
-}
-
-.panel-pane.hide-title .pane-title {
-  display: none;
-}
-
-.view-tiles .views-row {
-  margin: 0.382em 0 0.618em;
-  background: #ecf0f1;
-  padding: .382em .618em;
-}
-.view-tiles .views-field-title {
-  font-weight: 700;
-  font-size: 18.75px;
-  line-height: 23.75px;
-}
-
 h1 {
   font-size: 48px;
   font-weight: 900;
@@ -9352,5 +9298,73 @@ legend {
   }
   .navbar .nav-collapse .nav > li > a:hover {
     background-color: #18bc9c;
+  }
+}
+body {
+  padding-top: 75px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-bottom: 11px;
+  }
+}
+.navbar .brand {
+  float: right;
+  padding: 3px 10px;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 18.75px;
+  padding: 10px;
+}
+
+.page-header {
+  margin: 0;
+  padding: 0;
+}
+
+body #footer {
+  margin-top: 0.618em;
+  font-size: 85%;
+}
+body #footer .container {
+  padding: 0.382em 0;
+  border-top: 1px solid #ddd;
+}
+
+.pane-content ul.nav-tabs {
+  margin-bottom: 0.618em;
+}
+
+#navigation.navbar-fixed-top {
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+}
+
+.panel-pane.hide-title .pane-title {
+  display: none;
+}
+
+.view-tiles .views-row {
+  margin: 0.382em 0 0.618em;
+  background: #ecf0f1;
+  padding: .382em .618em;
+}
+.view-tiles .views-field-title {
+  font-weight: 700;
+  font-size: 18.75px;
+  line-height: 23.75px;
+}
+
+@media (max-width: 979px) {
+  .geofield-proximity-field-wrapper .form-type-select {
+    clear: left;
   }
 }

@@ -2,3 +2,12 @@
 // Layout
 // Styles for Forms
 // --------------------------------------------------
+
+
+@media (max-width: 979px) {
+
+  .geofield-proximity-field-wrapper .form-type-select {
+    clear: left;
+  }
+
+}
